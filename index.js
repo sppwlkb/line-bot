@@ -1,9 +1,10 @@
+
 const express = require('express');
-const { Client, middleware } = require('@line/bot');
+const { Client, middleware } = require('@line/bot-sdk');
 
 const config = {
-  channelAccessToken: '53ytUHOgePSzBOJbJH14kaF4+mof/NDDpTlj/v/i4eiX8AjtRQpWgNMT7ia+++6edIJwwa472H87O+hJp4As6W46nmGYQVAosj4w15KNGOdRkZbm1Zz8ctBu6aht2wRR0cvo49BM65XRKftjqSs+BAdB04t89/1O/w1cDnyilFU=',
-  channelSecret: 'b3f90444f4ed732cd38c6f7a5368591f'
+  channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN || '53ytUHOgePSzBOJbJH14kaF4+mof/NDDpTlj/v/i4eiX8AjtRQpWgNMT7ia+++6edIJwwa472H87O+hJp4As6W46nmGYQVAosj4w15KNGOdRkZbm1Zz8ctBu6aht2wRR0cvo49BM65XRKftjqSs+BAdB04t89/1O/w1cDnyilFU=',
+  channelSecret: process.env.CHANNEL_SECRET || 'b3f90444f4ed732cd38c6f7a5368591f'
 };
 
 const app = express();
