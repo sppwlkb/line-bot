@@ -1,5 +1,5 @@
 const express = require('express');
-const { Client, middleware } = require('@line/bot-sdk');
+const { Client, middleware } = require('@line/bot');
 
 const config = {
   channelAccessToken: '53ytUHOgePSzBOJbJH14kaF4+mof/NDDpTlj/v/i4eiX8AjtRQpWgNMT7ia+++6edIJwwa472H87O+hJp4As6W46nmGYQVAosj4w15KNGOdRkZbm1Zz8ctBu6aht2wRR0cvo49BM65XRKftjqSs+BAdB04t89/1O/w1cDnyilFU=',
